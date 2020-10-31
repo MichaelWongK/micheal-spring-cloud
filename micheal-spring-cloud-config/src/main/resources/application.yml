@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: cloud-config
+  cloud:
+    config:
+      label: main # 配置仓库的分支
+      server:
+        git:
+#          uri: https://github.com/MichaelWongK/spring-cloud-config.git # 配置 Git 仓库地址（GitHub、GitLab、码云 ...）
+#          uri: git@github.com:MichaelWongK/spring-cloud-config.git # 配置 Git 仓库地址（GitHub、GitLab、码云 ...）
+          search-paths: respo # 配置仓库路径（存放配置文件的目录）
+          username: 18751898541 # MichaelWongK # 访问 Git 仓库的账号
+          password: mingkai13 # 访问 Git 仓库的密码
+          uri: https://gitee.com/michealwong/spring-cloud-config.git
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
