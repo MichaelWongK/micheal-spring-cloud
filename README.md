@@ -26,6 +26,8 @@ Spring Cloud 为开发者提供了在分布式系统（配置管理，服务发�
 
 ├── [micheal-spring-cloud-config](https://github.com/MichaelWongK/micheal-spring-cloud/tree/main/micheal-spring-cloud-config)       				    —— 分布式配置中心(feign服务改造成配置中心客户端)
 
+├── [micheal-spring-cloud-zipkin](https://github.com/MichaelWongK/micheal-spring-cloud/tree/main/micheal-spring-cloud-zipkin)       				    —— 服务链路追踪(收集服务的定时数据，解决微服务架构延迟问题，包括数据的收集、存储、查找和展现)
+
 ## 补充配置中心
 
 [micheal-spring-cloud-config](https://github.com/MichaelWongK/micheal-spring-cloud/tree/main/micheal-spring-cloud-config) 默认使用 [配置中心-github](https://github.com/MichaelWongK/spring-cloud-config.git) (因网络问题，可切换为gitee分支管理配置 [配置中心-gitee](https://gitee.com/michealwong/spring-cloud-config.git))

@@ -10,10 +10,10 @@
         <relativePath>../micheal-spring-cloud-dependencies/pom.xml</relativePath>
     </parent>
 
-    <artifactId>micheal-spring-cloud-zuul</artifactId>
+    <artifactId>micheal-spring-cloud-zipkin</artifactId>
     <packaging>jar</packaging>
 
-    <name>micheal-spring-cloud-zuul</name>
+    <name>micheal-spring-cloud-zipkin</name>
     <url></url>
     <inceptionYear>2020-Now</inceptionYear>
 
@@ -39,17 +39,21 @@
         <!-- Spring Boot End -->
 
         <!-- Spring Cloud Begin -->
+<!--        <dependency>-->
+<!--            <groupId>io.zipkin.java</groupId>-->
+<!--            <artifactId>zipkin</artifactId>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-autoconfigure-ui</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
         <!-- Spring Cloud End -->
     </dependencies>
@@ -60,7 +64,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.micheal.spring.cloud.zuul.ZuulApplication</mainClass>
+                    <mainClass>com.micheal.spring.cloud.zipkin.ZipKinApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
