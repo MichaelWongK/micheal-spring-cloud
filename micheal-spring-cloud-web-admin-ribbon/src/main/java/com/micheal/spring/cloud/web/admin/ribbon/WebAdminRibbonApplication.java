@@ -16,6 +16,6 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 public class WebAdminRibbonApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WebAdminRibbonApplication.class);
+        SpringApplication.run(WebAdminRibbonApplication.class, args);
     }
 }

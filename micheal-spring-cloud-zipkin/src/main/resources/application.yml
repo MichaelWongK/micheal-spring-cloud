@@ -1,6 +1,10 @@
 spring:
   application:
     name: cloud-zipkin
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
 #  main:
 #    allow-bean-definition-overriding: true
 server:

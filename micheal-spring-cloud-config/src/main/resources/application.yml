@@ -14,6 +14,10 @@ spring:
           username: 18751898541 # MichaelWongK # 访问 Git 仓库的账号
           password: mingkai13 # 访问 Git 仓库的密码
           uri: https://gitee.com/michealwong/spring-cloud-config.git
+  boot:
+    admin:
+      client:
+        url: http://localhost:8084
 
 server:
   port: 8888

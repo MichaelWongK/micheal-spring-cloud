@@ -14,7 +14,7 @@ import zipkin2.server.internal.EnableZipkinServer;
  * 中增加 spring-cloud-starter-zipkin 依赖
  */
 @SpringBootApplication
-//@EnableEurekaClient
+@EnableEurekaClient
 @EnableZipkinServer
 public class ZipKinApplication {
 

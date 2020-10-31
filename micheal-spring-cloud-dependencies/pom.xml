@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.3.RELEASE</version>
+        <version>2.0.1.RELEASE</version>
     </parent>
 
     <groupId>com.micheal</groupId>
@@ -28,6 +28,7 @@
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 <!--        <zipkin2.version>2.22.0</zipkin2.version>-->
         <zipkin.version>2.12.3</zipkin.version>
+        <spring-boot-admin.version>2.0.1</spring-boot-admin.version>
     </properties>
 
     <dependencyManagement>
@@ -53,6 +54,16 @@
                 <groupId>io.zipkin.java</groupId>
                 <artifactId>zipkin-autoconfigure-ui</artifactId>
                 <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${spring-boot-admin.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

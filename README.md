@@ -12,6 +12,10 @@ Spring Cloud 为开发者提供了在分布式系统（配置管理，服务发�
 
 **micheal-spring-cloud**
 
+├── [micheal-spring-cloud-admin](https://github.com/MichaelWongK/micheal-spring-cloud/tree/main/micheal-spring-cloud-admin)       				   —— 监控管理系统(server 服务端监控中心)
+
+├── [micheal-spring-cloud-zipkin](https://github.com/MichaelWongK/micheal-spring-cloud/tree/main/micheal-spring-cloud-zipkin)       				    —— 服务链路追踪
+
 ├── [micheal-spring-cloud-dependencies](https://github.com/MichaelWongK/micheal-spring-cloud/tree/main/micheal-spring-cloud-dependencies)   		 —— 依赖管理项目
 
 ├── [micheal-spring-cloud-eureka](https://github.com/MichaelWongK/micheal-spring-cloud/tree/main/micheal-spring-cloud-eureka)    					 —— 服务注册中心
@@ -32,3 +36,12 @@ Spring Cloud 为开发者提供了在分布式系统（配置管理，服务发�
 
 [micheal-spring-cloud-config](https://github.com/MichaelWongK/micheal-spring-cloud/tree/main/micheal-spring-cloud-config) 默认使用 [配置中心-github](https://github.com/MichaelWongK/spring-cloud-config.git) (因网络问题，可切换为gitee分支管理配置 [配置中心-gitee](https://gitee.com/michealwong/spring-cloud-config.git))
 
+spring-cloud-admin-client 及 spring-cloud-zipkin 已集成至各个微服务中
+
+## 启动顺序
+
+- 注册与发现
+- 分布式配置中心
+- 服务提供者
+- 服务消费者
+- API 网关
