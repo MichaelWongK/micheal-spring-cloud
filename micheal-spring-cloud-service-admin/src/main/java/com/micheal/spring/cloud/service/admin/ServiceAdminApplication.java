@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @Description 服务提供者
  */
 @SpringBootApplication
-@EnableEurekaClient //表明自己是一个 Eureka Client.
+@EnableEurekaClient //表明自己是一个 Eureka 服务提供者.
 public class ServiceAdminApplication {
 
     public static void main(String[] args) {

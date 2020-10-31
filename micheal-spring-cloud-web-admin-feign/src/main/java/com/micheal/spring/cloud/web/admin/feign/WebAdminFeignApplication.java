@@ -11,13 +11,13 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @date 2020/10/30 16:17
  * @Description
  */
-@EnableDiscoveryClient
+@EnableDiscoveryClient // 表明是一个服务消费者
 @EnableFeignClients
 @SpringBootApplication
 @EnableHystrixDashboard
 public class WebAdminFeignApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WebAdminFeignApplication.class);
+        SpringApplication.run(WebAdminFeignApplication.class, args);
     }
 }
